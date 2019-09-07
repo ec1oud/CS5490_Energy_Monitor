@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/rutledge/prj/pool/CS5490_UEXT/CS5490_UEXT.sch</source>
+    <date>Sun 25 Aug 2019 02:36:39 PM CEST</date>
+    <tool>Eeschema 5.1.4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CS5490_UEXT.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="LOGO1">
+      <value>Logo_Open_Hardware_Small</value>
+      <footprint>Symbol:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP"> </field>
+      </fields>
+      <libsource lib="Graphic" part="Logo_Open_Hardware_Small" description="Open Hardware logo, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C1E2134</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>BH10S</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical</footprint>
+      <libsource lib="UEXT" part="BH10S" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D589C36</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>MOSI</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5C3202</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>SSEL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5CD91C</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>SDA</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5CE010</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>SCL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5EEC4D</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>SCK</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5F2F14</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>MISO</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5F2443</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>27nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D659501</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>27nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D659D5C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D660889</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6614CF</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>RB/2</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D671522</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>RB/2</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D671D31</tstamp>
+    </comp>
+    <comp ref="T1">
+      <value>CT</value>
+      <footprint>Inductor_THT:L_Axial_L16.0mm_D9.5mm_P20.32mm_Horizontal_Vishay_IM-10-37</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="CS5490-ISZ" part="CT" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D68F612</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>CS5490-ISZ</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://statics.cirrus.com/pubs/proDatasheet/CS5490_F3.pdf</datasheet>
+      <fields>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">None</field>
+        <field name="Field6">SOIC-16 Cirrus Logic</field>
+        <field name="Field7">CS5490-ISZ</field>
+        <field name="Field8">IC, 2 CH, POWER/ENERGY METER, 16SOIC; MSL: MSL 3 - 168 hours; SVHC: No SVHC _19-Dec-2011_</field>
+      </fields>
+      <libsource lib="CS5490-ISZ" part="CS5490-ISZ" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D65354E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6AFB06</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6DDBD5</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>27nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6F49FF</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>27nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6F5481</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6F3035</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>2M</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6F25DC</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D726BE9</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>4.096MHz</value>
+      <footprint>Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D834BD6</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D84D006</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D85CFB2</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D85E024</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D87FE86</tstamp>
+    </comp>
+    <comp ref="TP0">
+      <value>D Out</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D88B852</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8A6CBD</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Line</value>
+      <footprint>TerminalBlock_Philmore:TerminalBlock_Philmore_TB132_1x02_P5.00mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D73B1E9</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>serial</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x02_Odd_Even" description="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D992130</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>~RESET</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9A2D97</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Power</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9EA72E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CS5490-ISZ" part="CS5490-ISZ">
+      <docs>https://statics.cirrus.com/pubs/proDatasheet/CS5490_F3.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CS5490-ISZ</field>
+        <field name="Footprint">SOIC127P600X175-16N</field>
+        <field name="Datasheet">Cirrus Logic</field>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">None</field>
+        <field name="Field6">SOIC-16 Cirrus Logic</field>
+        <field name="Field7">CS5490-ISZ</field>
+        <field name="Field8">IC, 2 CH, POWER/ENERGY METER, 16SOIC; MSL: MSL 3 - 168 hours; SVHC: No SVHC _19-Dec-2011_</field>
+      </fields>
+      <pins>
+        <pin num="1" name="XOUT" type="BiDi"/>
+        <pin num="2" name="XIN" type="input"/>
+        <pin num="3" name="~RESET~" type="input"/>
+        <pin num="4" name="IIN-" type="input"/>
+        <pin num="5" name="IIN+" type="input"/>
+        <pin num="6" name="VIN+" type="input"/>
+        <pin num="7" name="VIN-" type="input"/>
+        <pin num="8" name="VREF-" type="power_in"/>
+        <pin num="9" name="VREF+" type="power_in"/>
+        <pin num="10" name="GNDA" type="power_in"/>
+        <pin num="11" name="VDDA" type="power_in"/>
+        <pin num="12" name="DO" type="output"/>
+        <pin num="13" name="TX" type="output"/>
+        <pin num="14" name="RX" type="input"/>
+        <pin num="15" name="MODE" type="passive"/>
+        <pin num="16" name="VDDD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CS5490-ISZ" part="CT">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">CT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x02_Odd_Even">
+      <description>Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x02_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Graphic" part="Logo_Open_Hardware_Small">
+      <description>Open Hardware logo, small</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">#LOGO</field>
+        <field name="Value">Logo_Open_Hardware_Small</field>
+      </fields>
+    </libpart>
+    <libpart lib="UEXT" part="BH10S">
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">BH10S</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CS5490-ISZ">
+      <uri>/home/rutledge/prj/pool/CS5490_UEXT/lib/CS5490-ISZ.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Graphic">
+      <uri>/usr/share/kicad/library/Graphic.lib</uri>
+    </library>
+    <library logical="UEXT">
+      <uri>/home/rutledge/prj/pool/CS5490_UEXT/lib/UEXT.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D1-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(C8-Pad2)">
+      <node ref="U1" pin="8"/>
+      <node ref="C8" pin="2"/>
+    </net>
+    <net code="3" name="Net-(C8-Pad1)">
+      <node ref="U1" pin="9"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="4" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="TP0" pin="1"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="5" name="+3V3">
+      <node ref="J4" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="Y1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(C4-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="8" name="Net-(C3-Pad1)">
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="10"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(J1-Pad7)">
+      <node ref="TP7" pin="1"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="12" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="13" name="Net-(J3-Pad4)">
+      <node ref="U1" pin="13"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C5-Pad2)">
+      <node ref="U1" pin="3"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="16" name="/RX">
+      <node ref="J1" pin="4"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="17" name="/TX">
+      <node ref="J1" pin="3"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="18" name="/Line">
+      <node ref="J2" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="19" name="Net-(C1-Pad1)">
+      <node ref="U1" pin="5"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="20" name="Net-(C2-Pad2)">
+      <node ref="R3" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="21" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+      <node ref="TP5" pin="1"/>
+    </net>
+    <net code="22" name="Net-(R2-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="T1" pin="1"/>
+    </net>
+    <net code="23" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="T1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="25" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+      <node ref="TP10" pin="1"/>
+    </net>
+    <net code="26" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+      <node ref="TP6" pin="1"/>
+    </net>
+  </nets>
+</export>
