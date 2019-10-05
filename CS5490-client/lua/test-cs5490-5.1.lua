@@ -5,6 +5,7 @@
 
 local rs232 = require "luars232"
 local bit = require "bit"
+local socket = require "socket"
 local string = require "string"
 port_name = "/dev/ttyS1"
 local out = io.stderr
@@ -43,6 +44,16 @@ local function readRegister(page, address)
 	return ret
 end
 
+local function writeRegister(page, address, value)
+        local cmd = string.char(bit.bor(page, 0x80), bit.bor(address, 0x40),
+                        bit.band(0xff, value), bit.band(0xff, bit.rshift(value, 8)), bit.rshift(value, 16))
+        out:write(string.format("write register %x %x value %x: sending %x %x %x %x %x\n", 
+                page, address, value,  
+                string.byte(cmd, 1), string.byte(cmd, 2), string.byte(cmd, 3), string.byte(cmd, 4), string.byte(cmd, 5)))
+        print(string.byte(cmd, 1, 5))
+        err, len = p:write(cmd, 100)
+end
+
 local function fixedPoint1dot23ToFloat(fp)
 	-- https://en.wikipedia.org/wiki/Q_%28number_format%29
 	if (bit.rshift(fp, 23) ~= 0) then
@@ -61,6 +72,11 @@ assert(p:set_flow_control(rs232.RS232_FLOW_OFF)  == rs232.RS232_ERR_NOERROR)
 
 out:write(string.format("OK, port open with values '%s'\n", tostring(p)))
 
+writeRegister(16, 32, 0xfff3e0) -- I DC offset calibration
+writeRegister(16, 37, 0xd0000) -- I AC offset calibration
+writeRegister(16, 34, 0xfe6000) -- V DC offset calibration
+writeRegister(16, 57, 0x00001e) -- set Tsettle to 30 OWR samples
+socket.sleep(0.5)
 -- sendInstruction(0x01) -- reset
 -- sendInstruction(0x03) -- wake up
 sendInstruction(0x15) -- continuous conversion
