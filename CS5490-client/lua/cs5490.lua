@@ -7,6 +7,15 @@ local p = 0
 local M = {}
 
 -- helper functions
+local function fixedPoint0dot24ToFloat(fp)
+	-- https://en.wikipedia.org/wiki/Q_%28number_format%29
+	if (bit.rshift(fp, 24) ~= 0) then
+		fp = bit.bor(fp, 0xff000000) -- sign-extend it from 24 to 32 bits
+	end
+	return fp * (2.0 ^ -24.0)
+--	return string.format("%f", value)
+end
+
 local function fixedPoint1dot23ToFloat(fp)
 	-- https://en.wikipedia.org/wiki/Q_%28number_format%29
 	if (bit.rshift(fp, 23) ~= 0) then
@@ -67,10 +76,10 @@ end
 function M.writeRegister(page, address, value)
 	local cmd = string.char(bit.bor(page, 0x80), bit.bor(address, 0x40),
 			bit.band(0xff, value), bit.band(0xff, bit.rshift(value, 8)), bit.rshift(value, 16))
-	out:write(string.format("write register %x %x value %x: sending %x %x %x %x %x\n",
-		page, address, value,
-		string.byte(cmd, 1), string.byte(cmd, 2), string.byte(cmd, 3), string.byte(cmd, 4), string.byte(cmd, 5)))
-	print(string.byte(cmd, 1, 5))
+--~ 	out:write(string.format("write register %x %x value %x: sending %x %x %x %x %x\n",
+--~ 		page, address, value,
+--~ 		string.byte(cmd, 1), string.byte(cmd, 2), string.byte(cmd, 3), string.byte(cmd, 4), string.byte(cmd, 5)))
+--~ 	print(string.byte(cmd, 1, 5))
 	err, len = p:write(cmd, 100)
 end
 
@@ -89,6 +98,10 @@ function M.readRegisterInt(page, address)
 	local ret = bit.bor(bit.lshift(string.byte(b3), 16), bit.lshift(string.byte(b2), 8), string.byte(b1))
 	-- print("page", page, "address", address, "->", string.byte(b1), string.byte(b2), string.byte(b3), "->", ret)
 	return ret
+end
+
+function M.readRegisterFixed0dot24(page, address)
+	return fixedPoint0dot24ToFloat(M.readRegisterInt(page, address))
 end
 
 function M.readRegisterFixed1dot23(page, address)

@@ -13,8 +13,14 @@ end
 require "cs5490-calibration"
 socket.sleep(0.5)
 
+out:write(string.format("initial config registers 0x%x 0x%x 0x%x\n",
+	chip.readRegisterInt(0, 0),
+	chip.readRegisterInt(0, 1),
+	chip.readRegisterInt(16, 0)
+	))
+out:write(string.format("calibrated Igain 0x%x\n", chip.readRegisterInt(16, 33)))
 chip.sendInstruction(0x15) -- continuous conversion
 while true do
-out:write(string.format("RMS current %f\n", chip.readRegisterFixed1dot23(16, 6)))
-socket.sleep(0.9)
+	socket.sleep(0.9)
+	out:write(string.format("RMS current 0x%x %f\n", chip.readRegisterInt(16, 6), currentScale * chip.readRegisterFixed0dot24(16, 6)))
 end
