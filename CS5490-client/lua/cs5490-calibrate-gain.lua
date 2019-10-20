@@ -40,10 +40,10 @@ chip.writeRegister(18, 63, 0x400000) -- set Vgain = 1.0
 -- OWR = 4000 Hz
 chip.writeRegister(16, 57, 0x001f40) -- set Tsettle to 2000 ms = 8000 OWR samples
 
--- let's calibrate at 3.3A using a 750W heater, using the 22Ω burden resistors
--- scale register could be 0.33 = 0x2a3d71 (although the datasheet says to use 0.6 * Ical / Imax)
--- (we can't actually read out 3.3 from the Irms register, so will have to multiply by 10 in cs5490-current.lua)
-local calScale = bit.tobit(floatToFixedPoint1dot23(0.33))
+-- let's calibrate at 3.2A using a 750W heater, using the 3.3Ω burden resistors
+-- scale register could be 0.1067 = 0x0da858 (although the datasheet says to use 0.6 * Ical / Imax)
+-- (we can't actually read out 3.2 from the Irms register, so will multiply by 30 in cs5490-current.lua)
+local calScale = bit.tobit(floatToFixedPoint1dot23(0.1067))
 out:write(string.format("setting calibration scale %x\n", calScale))
 chip.writeRegister(18, 63, calScale) -- set calibration scale
 socket.sleep(0.5)
@@ -52,7 +52,7 @@ out:write(string.format("calibration scale %f %x\n", chip.readRegisterFixed1dot2
 chip.sendInstruction(0x39) -- current gain calibration
 socket.sleep(3.5)
 out:write(string.format("calibrated Igain 0x%x %f\n", chip.readRegisterInt(16, 33), 2 * chip.readRegisterFixed1dot23(16, 33)))
--- I used trial and error to come up with 0x247400; this calibration results in 0x240c44
+-- this calibration results in approx. 0x510000 (it varied from 0x50d930 to 0x51484a)
 -- anyway cs5490-current.lua ends up saying about 3.3 when the current is actually about 3.3
 
 chip.writeRegister(16, 57, 0x00001e) -- set Tsettle to 30 OWR samples
