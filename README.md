@@ -1,13 +1,13 @@
 # UEXT AC Energy Monitor module
 
-I'm developing this for use with an
+I'm developing this for use with an 
 [Olimex board](https://www.olimex.com/Products/OLinuXino/RT5350F/RT5350F-OLinuXino-EVB/open-source-hardware)
 that runs [OpenWrt](https://openwrt.org/toh/olimex/rt5350f-olinuxino-evb) and
 has two GPIO-controlled relays, which I'm hoping to use as a pool pump
 controller.  I want to be able to monitor the performance of the pool pump over
 time, because this summer it started overheating and eventually failed.  It
 would be nice to get an early warning when that's about to happen.  I was
-searching and it seems that the
+searching and it seems that the 
 [CS5490](https://www.cirrus.com/products/cs5490/) will fit the bill: it's 3.3V
 powered, cheap enough, doesn't require much supporting circuitry, and works
 with current transformers.  The little Olimex board ought to be a good
@@ -42,7 +42,7 @@ transformer.  An AC brownout ought to result in a proportionately lower voltage
 from the transformer; and I hope there is no phase difference significant
 enough to affect the power computation.
 
-It also turns out the RT5350F-OLinuXino-EVB has a design flaw: the
+It also turns out the RT5350F-OLinuXino-EVB has a design flaw: the 
 [UEXT connector](https://www.olimex.com/Products/Modules/UEXT/) has a serial
 port, but it's the same one that the OpenWrt firmware is using for the Linux
 console!  So I can't use those serial lines for communicating with external
@@ -62,12 +62,24 @@ fine with this design.  I wrote a little test GUI with Qt to communicate with
 the board using an FTDI adapter or something like that.  I also wrote another
 test client using Lua 5.1 on the OpenWrt firmware, but it depends on being able
 to use lua-rs232 at 600 baud (the default baud rate of the CS5490's serial
-lines).  See [the issue about that](https://github.com/openwrt/packages/issues/10024).
+lines).  See 
+[the issue about that](https://github.com/openwrt/packages/issues/10024).
 
 ![photo of the prototype so far](prototype-0.8.jpg)
 
-The hardware design is licensed under a
+A design for a 3D-printable DIN rail mounting solution is also included:
+
+![sled for mounting on a DIN rail](mounting/din-rail-sled1.jpg)
+
+![sled for mounting on a DIN rail](mounting/din-rail-sled2.jpg)
+
+![sled for mounting on a DIN rail](mounting/din-rail-sled3.jpg)
+
+The hardware design is licensed under a 
 ![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+.
 
 The software has a GPLv3 license.
+
